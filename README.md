@@ -52,13 +52,13 @@ kubectl apply -f deployment.yaml
 kubectl create deployment nginx-deployment --image=nginx  -o yaml --dry-run
 ``` 
 
-##Services
+## Services
 
-###Create service using imperative command:
+### Create service using imperative command:
 ```
 kubectl expose deployment nginx-deployment --type=NodePort --port=80
 ```
 You can do the same using declarative way:
 ```
-kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 ```
